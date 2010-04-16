@@ -1,0 +1,17 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+Type();
+[
+    {
+	method => 'compare',
+	compute_params => sub {
+	    my(undef, $params) = @_;
+	    return [map(class()->$_(), @$params)];
+	},
+    } => [
+	[qw(CLUB2 SPADE2)] => -1,
+	[qw(DIAMOND2 DIAMOND3)] => -1,
+	[qw(HEART1 SPADE2)] => 1,
+	[qw(HEART13 DIAMOND13)] => 1,
+    ],
+];

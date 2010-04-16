@@ -1,0 +1,7 @@
+#!perl -w
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+use strict;
+use PokeBop::Util::SQL;
+
+PokeBop::Util::SQL->main(@ARGV);
