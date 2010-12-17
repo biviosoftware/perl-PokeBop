@@ -21,10 +21,9 @@ sub create_realm {
     $self->create({
 	owner_realm_id => $self->req('auth_id'),
     });
-    return $self->call_super_before([{}], sub {
-	_play($self, _players($self));
-	return;
-    });
+    my(@res) = shift->SUPER::create_realm({});
+    _play($self, _players($self));
+    return @res;
 }
 
 sub internal_initialize {
@@ -41,7 +40,7 @@ sub internal_initialize {
 
 sub _is_admin {
     my($roles) = @_;
-    return b_debug(grep($_->eq_administrator, @$roles)) ? 1 : 0;
+    return grep($_->eq_administrator, @$roles) ? 1 : 0;
     return 0;
     return !$_RS->is_equal(
 	${$_RS->from_array($roles)} & $_ADMINS,
