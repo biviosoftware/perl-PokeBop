@@ -38,7 +38,7 @@ sub merge_overrides {
 	}),
 	'Bivio::UI::Facade' => {
 	    default => 'PokeBop',
-	    http_suffix => 'www.pokebop.com',
+	    http_host => 'www.pokebop.com',
 	    mail_host => 'pokebop.com',
 	},
 	$proto->merge_http_log({
