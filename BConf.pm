@@ -1,16 +1,10 @@
-# Copyright (c) 2010 bivio Software, Inc.  All rights reserved.
+# Copyright (c) 2010-2013 bivio Software, Inc.  All rights reserved.
 # $Id$
 package PokeBop::BConf;
 use strict;
 use base 'Bivio::BConf';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-
-sub dev_overrides {
-    my($proto, $pwd, $host, $user, $http_port) = @_;
-    return {
-    };
-}
 
 sub merge_overrides {
     my($proto, $host) = @_;
