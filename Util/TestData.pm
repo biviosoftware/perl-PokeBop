@@ -4,7 +4,6 @@ package PokeBop::Util::TestData;
 use strict;
 use Bivio::Base 'Bivio.ShellUtil';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub reset_card_games {
     my($self) = @_;

@@ -6,7 +6,6 @@ package PokeBop::Model::HandCard;
 use strict;
 use Bivio::Base 'Model.RealmBase';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub REALM_ID_FIELD {
     return 'card_game_id';

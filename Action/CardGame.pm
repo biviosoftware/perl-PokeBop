@@ -4,7 +4,6 @@ package PokeBop::Action::CardGame;
 use strict;
 use Bivio::Base 'Biz.Action';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_CG) = b_use('Model.CardGame');
 my($_A) = b_use('Action.Acknowledgement');
 

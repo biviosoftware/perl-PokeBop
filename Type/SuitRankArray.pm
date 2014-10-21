@@ -4,7 +4,6 @@ package PokeBop::Type::SuitRankArray;
 use strict;
 use Bivio::Base 'Type.ArrayBase';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_SR) = b_use('Type.SuitRank');
 my($_R) = b_use('Biz.Random');
 

@@ -4,7 +4,6 @@ package PokeBop::Model::CardGame;
 use strict;
 use Bivio::Base 'Model.RealmOwnerBase';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_SRA) = b_use('Type.SuitRankArray');
 my($_R) = b_use('Auth.Role');
 my($_RS) = b_use('Auth.RoleSet');

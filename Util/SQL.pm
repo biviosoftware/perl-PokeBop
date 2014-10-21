@@ -9,7 +9,6 @@ use Bivio::Base 'ShellUtil';
 # perl -w ../../Util/pb-sql init_dbms
 # perl -w ../../Util/pb-sql create_test_db
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_RT) = b_use('Auth.RealmType');
 
 sub ddl_files {
